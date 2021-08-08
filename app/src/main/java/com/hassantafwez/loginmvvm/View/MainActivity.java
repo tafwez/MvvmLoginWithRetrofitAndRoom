@@ -57,16 +57,16 @@ public class MainActivity extends AppCompatActivity {
                     binding.txtEmailAddress.requestFocus();*/
                 }
                 else if (TextUtils.isEmpty(Objects.requireNonNull(loginUser).getStrPassword())) {
-                   /* binding.txtPassword.setError("Enter a Password");
-                    binding.txtPassword.requestFocus();*/
+                    binding.txtPassword.setError("Enter a Password");
+                    binding.txtPassword.requestFocus();
                 }
                 else if (!loginUser.isPasswordLengthGreaterThan5()) {
-                   /* binding.txtPassword.setError("Enter at least 6 Digit password");
-                    binding.txtPassword.requestFocus();*/
+                    binding.txtPassword.setError("Enter at least 6 Digit password");
+                    binding.txtPassword.requestFocus();
                 }
                 else {
-                   /* binding.lblEmailAnswer.setText(loginUser.getStrEmailAddress());
-                    binding.lblPasswordAnswer.setText(loginUser.getStrPassword());*/
+                    binding.lblEmailAnswer.setText(loginUser.getStrEmailAddress());
+                    binding.lblPasswordAnswer.setText(loginUser.getStrPassword());
                     login(loginUser.getStrEmailAddress(),loginUser.getStrPassword());
 
                 }
