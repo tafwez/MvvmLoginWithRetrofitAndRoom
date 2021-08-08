@@ -62,7 +62,7 @@ public class MainActivity extends AppCompatActivity {
                 }
                 else if (!loginUser.isPasswordLengthGreaterThan5()) {
                     binding.txtPassword.setError("Enter at least 6 Digit password");
-                    binding.txtPassword.requestFocus();
+                    //gitbinding.txtPassword.requestFocus();
                 }
                 else {
                    /* binding.lblEmailAnswer.setText(loginUser.getStrEmailAddress());
