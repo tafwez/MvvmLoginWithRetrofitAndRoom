@@ -53,8 +53,8 @@ public class MainActivity extends AppCompatActivity {
                     binding.txtEmailAddress.requestFocus();
                 }
                 else if (!loginUser.isEmailValid()) {
-                    binding.txtEmailAddress.setError("Enter a Valid E-mail Address");
-                    binding.txtEmailAddress.requestFocus();
+                    /*binding.txtEmailAddress.setError("Enter a Valid E-mail Address");
+                    binding.txtEmailAddress.requestFocus();*/
                 }
                 else if (TextUtils.isEmpty(Objects.requireNonNull(loginUser).getStrPassword())) {
                    /* binding.txtPassword.setError("Enter a Password");
