@@ -16,7 +16,7 @@ public class ApiClient {
 
         Retrofit retrofit = new Retrofit.Builder()
                 .addConverterFactory(GsonConverterFactory.create())
-                .baseUrl("http://api.larntech.net/")
+                .baseUrl("https://simption.com/system/api/android_app/v1/teacher_app/")
                 .client(okHttpClient)
                 .build();
 

@@ -1,17 +1,18 @@
 package com.hassantafwez.loginmvvm.vmodel;
+import android.app.Application;
+import android.os.AsyncTask;
 import android.view.View;
 
 import androidx.lifecycle.MutableLiveData;
 import androidx.lifecycle.ViewModel;
 
 import com.hassantafwez.loginmvvm.Model.LoginUser;
-
 public class LoginViewModel extends ViewModel {
 
     public MutableLiveData<String> EmailAddress = new MutableLiveData<>();
     public MutableLiveData<String> Password = new MutableLiveData<>();
-
     private MutableLiveData<LoginUser> userMutableLiveData;
+
 
     public MutableLiveData<LoginUser> getUser() {
 
@@ -29,5 +30,15 @@ public class LoginViewModel extends ViewModel {
         userMutableLiveData.setValue(loginUser);
 
     }
+
+
+
+
+
+
+
+
+
+
 
 }
